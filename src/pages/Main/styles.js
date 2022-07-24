@@ -23,17 +23,18 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    margin-top:30px;
-    display:flex;
-    flex-direction:row;
+  margin-top: 30px;
+  display:flex;
+  flex-direction: row;
 
-    input{
-        flex:1;
-        border:1px solid #DDD;
-        padding:10px 15px;
-        border-radius:4px;
-        font-size:17px;
-    }
+  input{
+    flex:1;
+    border: 1px solid ${props => (props.error ? '#FF0000' : '#eee')};
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 17px;
+  }
+
 `;
 
 //Criando animacao
